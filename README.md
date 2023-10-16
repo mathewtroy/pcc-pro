@@ -10,7 +10,7 @@
 
 **Implementace vybraného algoritmu**
 
-Boyer–Moore string-search algorithm
+Boyer–Moore string-search algorithm<br>
 Knuth–Morris–Pratt algorithm
 
 </details>
