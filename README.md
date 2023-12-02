@@ -24,12 +24,12 @@ The program is written in C++ utilizing different substring search algorithms. B
 - It performs the search and outputs the indices where the substring is found.
 
 **Automatic Mode:**
-- When 'A' is selected, the user chooses the size of the test file (small, normal, middle, default, big).
+- When 'A' is selected, the user chooses the size of the test file (small, normal, middle, default, big, large).
 - The program conducts automated tests using the predefined pattern 'qwerty'.
 - It displays the results and execution times for each algorithm.
 
 **Multithreading Mode:**
-- When 'T' is selected, the user chooses the size of the test file (small, normal, middle, default, big).
+- When 'T' is selected, the user chooses the size of the test file (small, normal, middle, default, big, large).
 - The program conducts multithreading tests using the predefined pattern 'qwerty'.
 - It displays the results and execution times for each algorithm.
 
@@ -70,6 +70,8 @@ Choose the test by entering **'2'** for Normal File with 390.000 symbols.<br>
 Choose the test by entering **'3'** for Middle File with 770.000 symbols.<br>
 Choose the test by entering **'4'** for Default File with 1.017.000 symbols.<br>
 Choose the test by entering **'5'** for Big File with 2.034.000 symbols.<br>
+Choose the test by entering **'6'** for Large File with 6.100.000 symbols.<br>
+
 
 The program will display the index(es) where the pattern is found and the time taken for each algorithm.<br>
 
