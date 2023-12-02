@@ -62,8 +62,6 @@ For Automatic mode, enter the letter **'A'**.<br>
 For Multithreading mode, enter the letter **'T'**.<br>
 [Follow the prompts to select a file and search for a pattern]
 
-After launching, choose the mode by entering **'M'** for Manual or **'A'** for Automatic.<br>
-
 **In Manual mode,** you will be asked to enter the pattern you want to search for.<br>
 
 **In Automatic and Multithreading modes,** select the file size to test the predefined pattern against different file sizes.<br>
