@@ -28,6 +28,11 @@ The program is written in C++ utilizing different substring search algorithms. B
 - The program conducts automated tests using the predefined pattern 'qwerty'.
 - It displays the results and execution times for each algorithm.
 
+**Multithreading Mode:**
+- When 'T' is selected, the user chooses the size of the test file (small, normal, middle, default, big).
+- The program conducts multithreading tests using the predefined pattern 'qwerty'.
+- It displays the results and execution times for each algorithm.
+
 **Results of Program Execution and Time Measurements Comparing Single-Threaded and Multi-Threaded Versions:**
 
 [Results of tests and time measurements]
@@ -54,13 +59,14 @@ The program is written in C++ utilizing different substring search algorithms. B
 
 For Manual mode, enter the letter **'M'**.<br>
 For Automatic mode, enter the letter **'A'**.<br>
+For Multithreading mode, enter the letter **'T'**.<br>
 [Follow the prompts to select a file and search for a pattern]
 
 After launching, choose the mode by entering **'M'** for Manual or **'A'** for Automatic.<br>
 
 **In Manual mode,** you will be asked to enter the pattern you want to search for.<br>
 
-**In Automatic mode,** select the file size to test the predefined pattern against different file sizes.<br>
+**In Automatic and Multithreading modes,** select the file size to test the predefined pattern against different file sizes.<br>
 Choose the test by entering **'1'** for Small File with 200.000 symbols.<br>
 Choose the test by entering **'2'** for Normal File with 390.000 symbols.<br>
 Choose the test by entering **'3'** for Middle File with 770.000 symbols.<br>
