@@ -35,7 +35,7 @@ The program is written in C++ utilizing different substring search algorithms. B
 
 **Results of Program Execution and Time Measurements Comparing Single-Threaded and Multi-Threaded Versions:**
 
-[Results of tests and time measurements]
+[Results of tests and time measurements](https://docs.google.com/spreadsheets/d/1bQ4Q8Y8hrVNX3BBT0SBclzxHJxUccfTY/edit#gid=654834231)
 
 </details>
 
@@ -50,6 +50,9 @@ The program is written in C++ utilizing different substring search algorithms. B
 
 **3.To run the program:** <br>
 `./alg`
+
+**4.To run the help:** <br>
+`./alg --help`
 
 
 ## :label: Program Menu
@@ -79,6 +82,10 @@ The program will display the index(es) where the pattern is found and the time t
 
 Feel free to modify the content as needed.
 </details>
+
+## :label: Documents
+
+📝 **[Documentation-Link](https://docs.google.com/document/d/1Ic4lZro8YpQ0qKrQ4U2BBhNYikpH0ttu/)**
 
 ## :label: Contacts
 
