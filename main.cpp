@@ -7,6 +7,7 @@
 
 const std::string DEFAULT_FILENAME = "tests/test1017k.txt";
 const std::string BIG_FILENAME = "tests/test2034k.txt";
+const std::string LARGE_FILENAME = "tests/test6100k.txt";
 const std::string MIDDLE_FILENAME = "tests/test770k.txt";
 const std::string NORMAL_FILENAME = "tests/test390k.txt";
 const std::string SMALL_FILENAME = "tests/test200k.txt";
@@ -24,13 +25,16 @@ const int TEST_NORMAL_FILE = 2;
 const int TEST_MIDDLE_FILE = 3;
 const int TEST_DEFAULT_FILE = 4;
 const int TEST_BIG_FILE = 5;
+const int TEST_LARGE_FILE = 6;
+
 
 const std::string TEST_PROMPT = "Choose one of the tests:\n"
                                 "For Testing Small File with 200.000 symbols enter 1 \n"
                                 "For Testing Normal File with 390.000 symbols enter 2 \n"
                                 "For Testing Middle File with 770.000 symbols enter 3 \n"
                                 "For Testing Default File with 1.017.000 symbols enter 4 \n"
-                                "For Testing Big File with 2.034.000 symbols enter 5 \n";
+                                "For Testing Big File with 2.034.000 symbols enter 5 \n"
+                                "For Testing Large File with 6.100.000 symbols enter 6 \n";
 
 // Function to print a separator line
 void printSeparator() {
@@ -95,7 +99,9 @@ void printHelp() {
     std::cout << "  Choose the test by entering '2' for Normal File with 390.000 symbols\n";
     std::cout << "  Choose the test by entering '3' for Middle File with 770.000 symbols\n";
     std::cout << "  Choose the test by entering '4' for Default File with 1.017.000 symbols\n";
-    std::cout << "  Choose the test by entering '5' for Big File with 2.034.000 symbols\n\n";
+    std::cout << "  Choose the test by entering '5' for Big File with 2.034.000 symbols\n";
+    std::cout << "  Choose the test by entering '6' for Large File with 6.100.000 symbols\n\n";
+
 
     std::cout << "  The program will display the index(es) where the pattern is found and "
                  "the time taken for each algorithm.\n\n";
@@ -127,6 +133,7 @@ int main(int argc, char* argv[]) {
 
     std::string filename = DEFAULT_FILENAME;
     std::string filenameBig = BIG_FILENAME;
+    std::string filenameLarge = LARGE_FILENAME;
     std::string filenameMiddle = MIDDLE_FILENAME;
     std::string filenameNormal = NORMAL_FILENAME;
     std::string filenameSmall = SMALL_FILENAME;
@@ -146,13 +153,13 @@ int main(int argc, char* argv[]) {
         RabinKarp rk;
 
         printSeparator();
-        bm.searchInFileBM(filenameBig, pattern);
+        bm.searchInFileBM(filename, pattern);
 
         printSeparator();
-        kmp.searchInFileKMP(filenameBig, pattern);
+        kmp.searchInFileKMP(filename, pattern);
 
         printSeparator();
-        rk.searchInFileRK(filenameBig, pattern, INT_MAX);
+        rk.searchInFileRK(filename, pattern, INT_MAX);
     } else if (mode == "A" || mode == "a") {
 
         std::filesystem::current_path(std::filesystem::current_path().parent_path());
@@ -229,6 +236,18 @@ int main(int argc, char* argv[]) {
                 rk.searchInFileRK(filenameBig, pattern, q);
                 break;
 
+            case TEST_LARGE_FILE:
+
+                printSeparator();
+                bm.searchInFileBM(filenameLarge, pattern);
+
+                printSeparator();
+                kmp.searchInFileKMP(filenameLarge, pattern);
+
+                printSeparator();
+                rk.searchInFileRK(filenameLarge, pattern, q);
+                break;
+
             default:
                 std::cerr << INVALID_MODE_ERROR << std::endl;
                 break;
@@ -260,6 +279,9 @@ int main(int argc, char* argv[]) {
                 break;
             case TEST_BIG_FILE:
                 multithreadedAlgorithms.runMultithreadedAlgorithms(BIG_FILENAME, DEFAULT_PATTERN);
+                break;
+            case TEST_LARGE_FILE:
+                multithreadedAlgorithms.runMultithreadedAlgorithms(LARGE_FILENAME, DEFAULT_PATTERN);
                 break;
             default:
                 std::cerr << INVALID_MODE_ERROR << std::endl;
