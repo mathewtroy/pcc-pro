@@ -1,0 +1,15 @@
+# .gitignore
+
+# Compiled files
+*.o
+*.out
+*.exe
+
+# Compiled directories
+out/
+build/
+
+# IDE-specific files
+.idea/
+*.cbp
+*.workspace
