@@ -63,7 +63,6 @@ The program is written in C++ utilizing different substring search algorithms. B
 For Manual mode, enter the letter **'M'**.<br>
 For Automatic mode, enter the letter **'A'**.<br>
 For Multithreading mode, enter the letter **'T'**.<br>
-[Follow the prompts to select a file and search for a pattern]
 
 **In Manual mode,** you will be asked to enter the pattern you want to search for.<br>
 
