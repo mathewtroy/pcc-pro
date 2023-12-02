@@ -35,13 +35,6 @@ The program is written in C++ utilizing different substring search algorithms. B
 </details>
 
 
-## :label: Contacts
-
-**Teacher:** Ingrid Nagyová <br>
-
-**Developer:** Aleksandr Kross  <br>
-:email: **[If you have questions text me](mailto:krossale@fel.czut.cz)**
-
 ## :label: Usage from the Command Line
 
 **1.Navigate to the program directory:** <br>
@@ -80,3 +73,10 @@ The program will display the index(es) where the pattern is found and the time t
 
 Feel free to modify the content as needed.
 </details>
+
+## :label: Contacts
+
+**Teacher:** Ingrid Nagyová <br>
+
+**Developer:** Aleksandr Kross  <br>
+:email: **[If you have questions text me](mailto:krossale@fel.czut.cz)**
