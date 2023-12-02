@@ -49,29 +49,35 @@ cmake_ninja_workdir = /home/krossale/Desktop/pcc/pro/draft/alg/cmake-build-debug
 
 build cmake_object_order_depends_target_alg: phony || CMakeFiles/alg.dir
 
-build CMakeFiles/alg.dir/src/main.cpp.o: CXX_COMPILER__alg_Debug /home/krossale/Desktop/pcc/pro/draft/alg/src/main.cpp || cmake_object_order_depends_target_alg
-  DEP_FILE = CMakeFiles/alg.dir/src/main.cpp.o.d
+build CMakeFiles/alg.dir/main.cpp.o: CXX_COMPILER__alg_Debug /home/krossale/Desktop/pcc/pro/draft/alg/main.cpp || cmake_object_order_depends_target_alg
+  DEP_FILE = CMakeFiles/alg.dir/main.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/alg.dir
-  OBJECT_FILE_DIR = CMakeFiles/alg.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/alg.dir
 
-build CMakeFiles/alg.dir/src/bm.cpp.o: CXX_COMPILER__alg_Debug /home/krossale/Desktop/pcc/pro/draft/alg/src/bm.cpp || cmake_object_order_depends_target_alg
-  DEP_FILE = CMakeFiles/alg.dir/src/bm.cpp.o.d
+build CMakeFiles/alg.dir/algorithms/BoyerMoore.cpp.o: CXX_COMPILER__alg_Debug /home/krossale/Desktop/pcc/pro/draft/alg/algorithms/BoyerMoore.cpp || cmake_object_order_depends_target_alg
+  DEP_FILE = CMakeFiles/alg.dir/algorithms/BoyerMoore.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/alg.dir
-  OBJECT_FILE_DIR = CMakeFiles/alg.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/alg.dir/algorithms
 
-build CMakeFiles/alg.dir/src/kmp.cpp.o: CXX_COMPILER__alg_Debug /home/krossale/Desktop/pcc/pro/draft/alg/src/kmp.cpp || cmake_object_order_depends_target_alg
-  DEP_FILE = CMakeFiles/alg.dir/src/kmp.cpp.o.d
+build CMakeFiles/alg.dir/algorithms/KnuthMorrisPratt.cpp.o: CXX_COMPILER__alg_Debug /home/krossale/Desktop/pcc/pro/draft/alg/algorithms/KnuthMorrisPratt.cpp || cmake_object_order_depends_target_alg
+  DEP_FILE = CMakeFiles/alg.dir/algorithms/KnuthMorrisPratt.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/alg.dir
-  OBJECT_FILE_DIR = CMakeFiles/alg.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/alg.dir/algorithms
 
-build CMakeFiles/alg.dir/src/rk.cpp.o: CXX_COMPILER__alg_Debug /home/krossale/Desktop/pcc/pro/draft/alg/src/rk.cpp || cmake_object_order_depends_target_alg
-  DEP_FILE = CMakeFiles/alg.dir/src/rk.cpp.o.d
+build CMakeFiles/alg.dir/algorithms/RabinKarp.cpp.o: CXX_COMPILER__alg_Debug /home/krossale/Desktop/pcc/pro/draft/alg/algorithms/RabinKarp.cpp || cmake_object_order_depends_target_alg
+  DEP_FILE = CMakeFiles/alg.dir/algorithms/RabinKarp.cpp.o.d
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/alg.dir
-  OBJECT_FILE_DIR = CMakeFiles/alg.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/alg.dir/algorithms
+
+build CMakeFiles/alg.dir/include/MultithreadedAlgorithms.cpp.o: CXX_COMPILER__alg_Debug /home/krossale/Desktop/pcc/pro/draft/alg/include/MultithreadedAlgorithms.cpp || cmake_object_order_depends_target_alg
+  DEP_FILE = CMakeFiles/alg.dir/include/MultithreadedAlgorithms.cpp.o.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/alg.dir
+  OBJECT_FILE_DIR = CMakeFiles/alg.dir/include
 
 
 # =============================================================================
@@ -81,7 +87,7 @@ build CMakeFiles/alg.dir/src/rk.cpp.o: CXX_COMPILER__alg_Debug /home/krossale/De
 #############################################
 # Link the executable alg
 
-build alg: CXX_EXECUTABLE_LINKER__alg_Debug CMakeFiles/alg.dir/src/main.cpp.o CMakeFiles/alg.dir/src/bm.cpp.o CMakeFiles/alg.dir/src/kmp.cpp.o CMakeFiles/alg.dir/src/rk.cpp.o
+build alg: CXX_EXECUTABLE_LINKER__alg_Debug CMakeFiles/alg.dir/main.cpp.o CMakeFiles/alg.dir/algorithms/BoyerMoore.cpp.o CMakeFiles/alg.dir/algorithms/KnuthMorrisPratt.cpp.o CMakeFiles/alg.dir/algorithms/RabinKarp.cpp.o CMakeFiles/alg.dir/include/MultithreadedAlgorithms.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/alg.dir
   POST_BUILD = :
